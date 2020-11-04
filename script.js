@@ -2,7 +2,8 @@
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
-function generatepassword() {
+function generatePassword() {
+
   var passwordLength = prompt("How long do you want your password? Please choose between 8-128");
   if (passwordLength >= 8 && passwordLength <=128){
      alert("You chose a password length of " + passwordLength);
@@ -55,7 +56,8 @@ function generatepassword() {
     realPassword += tempPassword.charAt(randomChar);
   } // for loop end
   alert(realPassword);
-  return realPassword;
+
+  return (realPassword);
 
 } //Function closed bracket
 
