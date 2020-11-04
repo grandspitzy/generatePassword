@@ -20,7 +20,7 @@ function generatepassword() {
    var numbers = confirm("Do you want numbers in your password?");
    var specialChars = confirm("Do you want special characters in your password?");
 
-   alert("Lower Case "+ lowerCase + "Upper Case "+ upperCase + "Numbers "+ numbers + "specialChars "+ specialChars);
+   alert("Lower Case "+ lowerCase + " Upper Case "+ upperCase + " Numbers "+ numbers + " specialChars "+ specialChars);
   
    if (lowerCase === false && upperCase === false && numbers === false && specialChars === false){
      alert("You didn't choose any correct characters");
@@ -31,12 +31,32 @@ function generatepassword() {
    var upperCaseString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
    var numbersString = "1234567890";
    var specialString= " !#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
-   
+
    if (lowerCase === true){
      password += lowerCaseString;
      alert(password);
-
+    }
+    if (upperCase === true){
+    password += upperCaseString;
+    alert(password);
    }
+    if (numbers === true){
+    password += numbersString;
+    alert(password);
+   }
+    if (specialChars === true){
+    password += specialString;
+    alert(password);
+    }
+  } // end of if statement to validate at least one was chosen
+ 
+
+
+
+
+
+
+
 
 
 } //Function closed bracket
